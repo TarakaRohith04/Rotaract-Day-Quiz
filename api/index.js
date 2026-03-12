@@ -14,20 +14,34 @@ app.use(express.json());
 let isConnected = false;
 const connectDB = async () => {
     if (isConnected) return;
+    
+    if (!process.env.MONGO_URI) {
+        throw new Error('MONGO_URI is not defined in environment variables');
+    }
+
     try {
         await mongoose.connect(process.env.MONGO_URI);
         isConnected = true;
         console.log('MongoDB Connected successfully');
     } catch (err) {
         console.error('MongoDB connection error:', err);
+        throw err; // Re-throw to be caught by the middleware
     }
 };
 
 // Vercel serverless functions handle requests by exporting the app, 
 // but we need to ensure the DB is connected for each request if needed.
 app.use(async (req, res, next) => {
-    await connectDB();
-    next();
+    try {
+        await connectDB();
+        next();
+    } catch (err) {
+        res.status(500).json({ 
+            error: 'Backend Database Connection Error',
+            message: err.message,
+            tip: 'Ensure MONGO_URI is set in Vercel and IP 0.0.0.0/0 is whitelisted in MongoDB Atlas.'
+        });
+    }
 });
 
 /* ---------------- API ENDPOINTS ---------------- */
