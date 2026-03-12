@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const participantSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -23,4 +23,6 @@ const participantSchema = new mongoose.Schema({
   timestamp: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Participant', participantSchema);
+// Avoid re-compiling the model if it already exists
+const Participant = mongoose.models.Participant || mongoose.model('Participant', participantSchema);
+export default Participant;
