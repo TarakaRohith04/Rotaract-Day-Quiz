@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap');
+
+:root {
+  --primary: #015396; /* Blue from image */
+  --secondary: #D71960; /* Rotaract Pink */
+  --accent: #F59E0B; /* Gold */
+  --bg-light: #f0f4f8;
+  --text-dark: #1a202c;
+  --text-muted: #4a5568;
+  --text-subtle: #718096;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: #333;
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.6;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Common Header Styles */
+.app-header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.header-left .project-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.initiative-text {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.club-logo-small {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Common Footer Styles */
+.app-footer {
+  padding: 32px;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: var(--text-subtle);
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.contact-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.separator {
+  color: #cbd5e0;
+}
+
+/* Card & Content Styles */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.details-card {
+  background: white;
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  width: 100%;
+}
+
+/* Button & Form Utilities (To be reused) */
+.btn-blue {
+  background-color: var(--primary);
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-blue:hover {
+  background-color: #00447a;
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
