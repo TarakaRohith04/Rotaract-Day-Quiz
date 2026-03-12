@@ -16,7 +16,7 @@ const Registration = ({ onComplete, onHome }) => {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/api/check-phone', {
+      const response = await fetch('/api/check-phone', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

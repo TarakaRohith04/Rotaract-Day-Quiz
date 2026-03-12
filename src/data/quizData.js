@@ -36,11 +36,11 @@ export const quizData = {
     { id: 32, question: "Interact clubs operate under sponsorship of:", options: ["Rotary Clubs", "Rotaract Clubs", "Inner Wheel Clubs", "Lions Clubs"], correct: 0 },
     { id: 33, question: "Who founded Inner Wheel?", options: ["Margarette Golding", "Paul Harris", "Arch Klumph", "Herbert Taylor"], correct: 0 },
     { id: 34, question: "The first Inner Wheel Club was established in:", options: ["1915", "1924", "1935", "1945"], correct: 1 },
-    { id: 35, question: "Who founded the Rotary Foundation?", options: ["Paul Harris", "Arch Klumph", "Herbert Taylor", "Luther Hodges"], correct: 0 }
+    { id: 35, question: "Who founded the Rotary Foundation?", options: ["Paul Harris", "Arch Klumph", "Herbert Taylor", "Luther Hodges"], correct: 1 }
   ],
   level3: [
     { id: 36, question: "What was the first donation made to the Rotary Foundation?", options: ["$10", "$26.50", "$100", "$50"], correct: 1 },
-    { id: 37, question: "Who was the fifth Rotarian?", options: ["Paul Harris", "Hiram Shorey", "Harry Ruggles", "Silvester Schiele"], correct: 1 },
+    { id: 37, question: "Who was the fifth Rotarian?", options: ["Paul Harris", "Hiram Shorey", "Harry Ruggles", "Silvester Schiele"], correct: 2 },
     { id: 38, question: "Which Rotary tool is used to track grants?", options: ["Rotary Grant Center", "Rotary Service Center", "Rotary Resource Portal", "Rotary Grant Monitor"], correct: 0 },
     { id: 39, question: "Which Rotary platform tracks membership and foundation reports?", options: ["Rotary Club Center", "Rotary Dashboard", "Rotary Management System", "Rotary Hub"], correct: 0 },
     { id: 40, question: "What is the Service Project Center used for?", options: ["Managing service projects", "Financial reporting", "Membership registration", "Leadership elections"], correct: 0 },
@@ -58,7 +58,7 @@ export const quizData = {
     { id: 52, question: "Interact clubs partner primarily with:", options: ["Rotary Clubs", "Rotaract Clubs", "Lions Clubs", "NGOs"], correct: 0 },
     { id: 53, question: "Interact helps youth develop:", options: ["Leadership skills", "Service attitude", "International understanding", "All of the above"], correct: 3 },
     { id: 54, question: "International Inner Wheel Day is celebrated on:", options: ["January 10", "February 23", "March 13", "April 5"], correct: 0 },
-    { id: 55, question: "The first Inner Wheel Club in India was established in:", options: ["Mumbai", "Kolkata", "Delhi", "Chennai"], correct: 1 },
+    { id: 55, question: "The first Inner Wheel Club in India was established in:", options: ["Mumbai", "Ahmedabad", "Delhi", "Chennai"], correct: 1 },
     { id: 56, question: "A donor contributing $1,000 becomes:", options: ["Benefactor", "Paul Harris Fellow", "Major Donor", "Legacy Member"], correct: 1 },
     { id: 57, question: "Which fund supports Rotary’s humanitarian grants?", options: ["World Fund", "Disaster Fund", "Global Aid Fund", "Rotary Service Fund"], correct: 0 },
     { id: 58, question: "Which Rotary initiative focuses on eradicating polio?", options: ["Global Grant", "End Polio Now", "Rotary Health Mission", "Polio Relief Fund"], correct: 1 },

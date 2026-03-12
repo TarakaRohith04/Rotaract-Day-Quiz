@@ -13,7 +13,7 @@ const AdminDashboard = ({ onBack, onHome }) => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/results');
+        const response = await fetch('/api/results');
         if (response.ok) {
           const results = await response.json();
           // Sort is already handled by the backend, but we can do it here just in case
@@ -50,7 +50,7 @@ const AdminDashboard = ({ onBack, onHome }) => {
       // If we have a MongoDB _id, use it, otherwise fallback to timestamp
       if (id) {
          try {
-           const response = await fetch(`http://localhost:5000/api/results/${id}`, {
+           const response = await fetch(`/api/results/${id}`, {
              method: 'DELETE',
            });
            if (response.ok) {
