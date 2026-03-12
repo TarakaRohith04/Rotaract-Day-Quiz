@@ -36,7 +36,7 @@ export const quizData = {
     { id: 32, question: "Interact clubs operate under sponsorship of:", options: ["Rotary Clubs", "Rotaract Clubs", "Inner Wheel Clubs", "Lions Clubs"], correct: 0 },
     { id: 33, question: "Who founded Inner Wheel?", options: ["Margarette Golding", "Paul Harris", "Arch Klumph", "Herbert Taylor"], correct: 0 },
     { id: 34, question: "The first Inner Wheel Club was established in:", options: ["1915", "1924", "1935", "1945"], correct: 1 },
-    { id: 35, question: "Who founded the Rotary Foundation?", options: ["Paul Harris", "Arch Klumph", "Herbert Taylor", "Luther Hodges"], correct: 1 }
+    { id: 35, question: "Who founded the Rotary Foundation?", options: ["Paul Harris", "Arch Klumph", "Herbert Taylor", "Luther Hodges"], correct: 0 }
   ],
   level3: [
     { id: 36, question: "What was the first donation made to the Rotary Foundation?", options: ["$10", "$26.50", "$100", "$50"], correct: 1 },
